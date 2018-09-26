@@ -118,8 +118,8 @@
         address: '',
         balance: 0,
         send2: {
-          address: '0x393d63b9006432f1334b9a0ec16dccbcc661741b',
-          amount: 3
+          address: '',
+          amount: 0
         },
         receipt: ''
       }

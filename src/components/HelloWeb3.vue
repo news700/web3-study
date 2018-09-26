@@ -56,15 +56,17 @@
   import VueJsonPretty from 'vue-json-pretty'
 
   const wei = new BigNumber(1000000000000000000)
+  const mufasa = new BigNumber(1000000000)
 
-  const tokenAddress = '0x01136cc7dd8a193d1bd0236bb5159eb969e681d3';
+  //fixme load from env
+  const contractAddr = '0xf5100b889afd73e7fc270fc1a4147198b8ca7ae0';
   const minABI = [
     // balanceOf
     {
       "constant": true,
       "inputs": [
         {
-          "name": "_who",
+          "name": "_owner",
           "type": "address"
         }
       ],
@@ -103,7 +105,7 @@
       "type": "function"
     }
   ];
-  const contract = web3.eth.contract(minABI).at(tokenAddress);
+  const contract = web3.eth.contract(minABI).at(contractAddr);
 
   export default {
     name: 'HelloWeb3',

@@ -15,7 +15,8 @@
     "vue-json-pretty": "^1.4.1",
     "vue-router": "^3.0.1",
     "vuetify": "^1.2.5",
-    "web3": "^1.0.0-beta.36"
+    "web3": "^1.0.0-beta.36",
+    "zeppelin-solidity": "^1.12.0"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
